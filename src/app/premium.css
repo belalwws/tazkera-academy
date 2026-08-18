@@ -2371,8 +2371,9 @@
   }
   .new-hero-copy .premium-pill {
     display: flex;
-    width: max-content;
+    width: fit-content;
     max-width: 100%;
+    min-width: 0;
     margin-inline: auto;
   }
   .new-hero-lead {
@@ -2397,8 +2398,9 @@
   .about-premium-grid .premium-pill,
   .contact-premium-hero-grid .premium-pill {
     display: flex;
-    width: max-content;
+    width: fit-content;
     max-width: 100%;
+    min-width: 0;
     margin-inline: auto;
   }
   .about-hero-lead,
@@ -2557,6 +2559,24 @@
   .announcement-text {
     font-size: 11px;
     line-height: 1.35;
+  }
+  .new-hero-copy,
+  .about-premium-copy,
+  .contact-premium-hero-grid > :first-child {
+    min-width: 0;
+  }
+  .new-hero-copy .premium-pill,
+  .about-premium-grid .premium-pill,
+  .contact-premium-hero-grid .premium-pill {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    text-align: center;
+  }
+  .premium-pill > span:last-child {
+    min-width: 0;
+    white-space: normal;
   }
   .header-inner {
     height: 72px;
