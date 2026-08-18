@@ -43,7 +43,7 @@ export default function Header() {
         <Link href="/" className="brand premium-brand" aria-label="Tazkera Academy Home">
           <div className="brand-emblem-wrap">
             <Image
-              src="/assets/logo.jpg"
+              src="/assets/tazkera-official-logo.jpg"
               alt="Tazkera Academy official logo"
               width={52}
               height={52}

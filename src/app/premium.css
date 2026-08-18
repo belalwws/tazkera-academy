@@ -86,6 +86,7 @@
 .brand-emblem-wrap {
   width: 52px;
   height: 52px;
+  flex: 0 0 52px;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -108,6 +109,7 @@
 
 .brand-copy {
   display: flex;
+  min-width: 0;
   flex-direction: column;
 }
 
@@ -167,6 +169,7 @@
 
 .header-actions {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 12px;
 }
@@ -214,12 +217,24 @@
   border-top: 1px solid rgba(199, 150, 62, 0.15);
 }
 
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-link {
+  display: block;
+  width: 100%;
   font-size: 16px;
   font-weight: 600;
   color: var(--ink);
   padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mobile-menu-footer {
+  display: grid;
+  gap: 10px;
 }
 
 .mobile-link.active {
@@ -317,6 +332,7 @@
 
 .hero-benefit-item {
   display: flex;
+  min-width: 0;
   align-items: center;
   gap: 12px;
 }
@@ -334,16 +350,19 @@
 
 .hero-benefit-item div {
   display: flex;
+  min-width: 0;
   flex-direction: column;
 }
 
 .hero-benefit-item b {
   font-size: 13px;
+  line-height: 1.25;
   color: var(--green);
 }
 
 .hero-benefit-item span {
   font-size: 11px;
+  line-height: 1.4;
   color: var(--muted);
 }
 
@@ -1867,6 +1886,7 @@
 }
 
 .contact-social-panel {
+  min-width: 0;
   background: linear-gradient(145deg, #03211b, #073f34);
   color: #ffffff;
   border-radius: 32px;
@@ -1890,6 +1910,7 @@
 
 .social-premium-list {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: 14px;
   margin-bottom: 28px;
@@ -1897,6 +1918,7 @@
 
 .social-contact-card {
   display: flex;
+  min-width: 0;
   align-items: center;
   gap: 14px;
   background: rgba(255, 255, 255, 0.08);
@@ -1945,8 +1967,14 @@
 
 .social-contact-info {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.social-contact-info span,
+.social-contact-info small {
+  overflow-wrap: anywhere;
 }
 
 .social-contact-info b {
@@ -1992,6 +2020,7 @@
 }
 
 .trial-form-card {
+  min-width: 0;
   background: #ffffff;
   border: 1px solid rgba(199, 150, 62, 0.25);
   border-radius: 32px;
@@ -2026,6 +2055,7 @@
 
 .form-label {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: 7px;
 }
@@ -2241,6 +2271,7 @@
 
 .footer-col {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: 12px;
 }
@@ -2258,10 +2289,16 @@
 
 .footer-social-link {
   display: inline-flex;
+  min-width: 0;
   align-items: center;
   gap: 8px;
   font-size: 13px;
   color: #a7c2b9;
+}
+
+.footer-social-link span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .footer-social-link svg {
@@ -2311,6 +2348,21 @@
 
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1100px) {
+  .new-hero-grid,
+  .about-premium-grid,
+  .contact-premium-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    min-height: auto;
+  }
+  .new-hero-copy {
+    max-width: 820px;
+  }
+  .new-hero-visual,
+  .about-orbit-wrap,
+  .contact-lantern-wrap {
+    min-height: 480px;
+  }
   .premium-program-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2333,6 +2385,14 @@
 }
 
 @media (max-width: 960px) {
+  .premium-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+  .premium-heading p {
+    max-width: 720px;
+  }
   .new-hero-grid, .about-premium-grid, .contact-premium-hero-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2380,6 +2440,65 @@
 @media (max-width: 680px) {
   .container {
     width: calc(100% - 32px);
+  }
+  .top-announcement-bar {
+    padding: 6px 0;
+  }
+  .announcement-inner {
+    justify-content: center;
+    gap: 4px;
+    text-align: center;
+  }
+  .announcement-badge,
+  .announcement-link {
+    display: none;
+  }
+  .announcement-text {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .header-inner {
+    height: 72px;
+    gap: 12px;
+  }
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+  .brand-emblem-wrap {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    border-radius: 14px;
+  }
+  .brand-mark-3d {
+    width: 42px;
+    height: 42px;
+  }
+  .brand-name {
+    font-size: 18px;
+  }
+  .brand-tagline {
+    display: none;
+  }
+  .header-whatsapp,
+  .header-trial {
+    display: none;
+  }
+  .menu-button {
+    flex: 0 0 40px;
+  }
+  .contact-social-panel,
+  .trial-form-card {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+  .social-contact-card {
+    gap: 12px;
+    padding: 14px;
+  }
+  .social-card-arrow {
+    display: none;
   }
   .hero-title {
     font-size: 38px;

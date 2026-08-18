@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="footer-brand-row">
             <div className="footer-logo-shell">
               <Image
-                src="/assets/logo.jpg"
+                src="/assets/tazkera-official-logo.jpg"
                 alt="Tazkera Academy official logo"
                 width={56}
                 height={56}

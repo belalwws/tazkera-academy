@@ -181,7 +181,7 @@ export default function Home() {
             <Reveal delay={0.26} className="hero-benefits-row">
               <div className="hero-benefit-item">
                 <div className="benefit-icon-box"><CalendarDays size={18}/></div>
-                <div><b>Since 2017</b><span>Experienced teaching team</span></div>
+                <div><b>Since 2017</b><span>Teaching experience</span></div>
               </div>
               <div className="hero-benefit-item">
                 <div className="benefit-icon-box"><Users size={18}/></div>
@@ -189,7 +189,7 @@ export default function Home() {
               </div>
               <div className="hero-benefit-item">
                 <div className="benefit-icon-box"><LineChart size={18}/></div>
-                <div><b>Personalized</b><span>Live guidance around your goals</span></div>
+                <div><b>Personalized</b><span>Built around your goals</span></div>
               </div>
             </Reveal>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="hero-visual-glow" />
             <div className="hero-brand-seal" aria-label="Tazkera Academy official logo">
               <Image
-                src="/assets/logo.jpg"
+                src="/assets/tazkera-official-logo.jpg"
                 alt="Tazkera Academy official logo"
                 width={140}
                 height={140}
