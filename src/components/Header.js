@@ -83,9 +83,9 @@ export default function Header() {
             <MessageCircle size={17} />
             <span>WhatsApp</span>
           </a>
-          <Link href="/contact#trial" className="button premium-primary header-trial">
-            <span>Free Trials</span>
-            <ArrowUpRight size={15} />
+          <Link href="/contact#trial" className="header-trial" aria-label="Book 2 Free Trials">
+            <span>Free Trial</span>
+            <ArrowUpRight size={13} />
           </Link>
           <button
             className="menu-button premium-menu-button"
