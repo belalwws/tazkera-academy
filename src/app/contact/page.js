@@ -29,9 +29,9 @@ export default function ContactPage() {
 
   function submit(e) {
     e.preventDefault();
-    const message = `Assalamu Alaykum Tazkera Academy!%0A%0A🌟 *Booking 2 Free Trial Lessons:*%0A👤 *Name:* ${encodeURIComponent(form.name)}%0A📱 *WhatsApp:* ${encodeURIComponent(form.phone)}%0A🎂 *Student Age / Track:* ${encodeURIComponent(form.age || 'Not specified')}%0A📚 *Program:* ${encodeURIComponent(form.program || 'General')}%0A💳 *Preferred Plan:* ${encodeURIComponent(form.plan || 'Not sure yet')}%0A⏰ *Preferred Schedule:* ${encodeURIComponent(form.schedule || 'Flexible')}%0A🌍 *Time Zone:* ${encodeURIComponent(form.timezone || 'Not specified')}%0A🎯 *Learning Goals:* ${encodeURIComponent(form.goals || 'Start from the appropriate level')}`;
+    const message = `Assalamu Alaykum Al-Mundhir Quran Academy (أكاديمية المنذر)!%0A%0A🌟 *Booking Free Trial Lesson:*%0A👤 *Name:* ${encodeURIComponent(form.name)}%0A📱 *WhatsApp:* ${encodeURIComponent(form.phone)}%0A🎂 *Student Age / Track:* ${encodeURIComponent(form.age || 'Not specified')}%0A📚 *Program:* ${encodeURIComponent(form.program || 'General')}%0A💳 *Preferred Plan:* ${encodeURIComponent(form.plan || 'Not sure yet')}%0A⏰ *Preferred Schedule:* ${encodeURIComponent(form.schedule || 'Flexible')}%0A🌍 *Time Zone / Country:* ${encodeURIComponent(form.timezone || 'Not specified')}%0A🎯 *Learning Goals:* ${encodeURIComponent(form.goals || 'Start from the appropriate level')}`;
     
-    window.open(`https://wa.me/201105778132?text=${message}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/201551669364?text=${message}`, '_blank', 'noopener,noreferrer');
   }
 
   return (
@@ -92,7 +92,7 @@ export default function ContactPage() {
 
             <div className="social-premium-list">
               <a
-                href="https://wa.me/201105778132"
+                href="https://wa.me/201551669364"
                 target="_blank"
                 rel="noreferrer"
                 className="social-contact-card"
@@ -102,14 +102,14 @@ export default function ContactPage() {
                 </div>
                 <div className="social-contact-info">
                   <b>WhatsApp Direct Chat</b>
-                  <span>+20 110 577 8132</span>
+                  <span>+20 155 166 9364</span>
                   <small>Official academy WhatsApp</small>
                 </div>
                 <ArrowRight size={18} className="social-card-arrow"/>
               </a>
 
               <a
-                href="https://www.instagram.com/tazkeraacademy?igsh=MXNuaXZ2dmowZDBndQ=="
+                href="https://www.instagram.com/al_mundhir_academy?igsi=enZ6c2d1OWY0OTNi"
                 target="_blank"
                 rel="noreferrer"
                 className="social-contact-card"
@@ -119,14 +119,14 @@ export default function ContactPage() {
                 </div>
                 <div className="social-contact-info">
                   <b>Instagram</b>
-                  <span>@tazkeraacademy</span>
-                  <small>Official Tazkera Academy Instagram</small>
+                  <span>@al_mundhir_academy</span>
+                  <small>Official Instagram</small>
                 </div>
                 <ArrowRight size={18} className="social-card-arrow"/>
               </a>
 
               <a
-                href="https://www.facebook.com/share/14gEvZZWsoB/"
+                href="https://www.facebook.com/share/1KBYMsXk6r/"
                 target="_blank"
                 rel="noreferrer"
                 className="social-contact-card"
@@ -136,14 +136,14 @@ export default function ContactPage() {
                 </div>
                 <div className="social-contact-info">
                   <b>Facebook</b>
-                  <span>Tazkera Academy</span>
-                  <small>Official academy Facebook page</small>
+                  <span>Al-Mundhir Academy</span>
+                  <small>Official Facebook page</small>
                 </div>
                 <ArrowRight size={18} className="social-card-arrow"/>
               </a>
 
               <a
-                href="mailto:tazkeraacademy9@gmail.com"
+                href="mailto:almudhiracademy0@gmail.com"
                 className="social-contact-card"
               >
                 <div className="social-icon-box email-box">
@@ -151,7 +151,7 @@ export default function ContactPage() {
                 </div>
                 <div className="social-contact-info">
                   <b>Email</b>
-                  <span>tazkeraacademy9@gmail.com</span>
+                  <span>almudhiracademy0@gmail.com</span>
                   <small>Official email contact</small>
                 </div>
                 <ArrowRight size={18} className="social-card-arrow"/>
@@ -219,11 +219,12 @@ export default function ContactPage() {
                     onChange={update}
                     className="form-input form-select"
                   >
-                    <option>Qur’an & Tajweed</option>
-                    <option>Arabic Language</option>
-                    <option>Noorani Qaida (Beginners)</option>
-                    <option>Islamic Studies</option>
-                    <option>Custom Track / Combination</option>
+                    <option>Qur’an & Tajweed (تحفيظ وتجويد)</option>
+                    <option>Tajweed Course for Beginners (كورس تجويد)</option>
+                    <option>Arabic Language Foundation (تأسيس لغة عربية)</option>
+                    <option>Islamic Studies (تدريس العلوم الشرعية)</option>
+                    <option>Muslim Child Mindset & Awareness (تأسيس وعي الطفل)</option>
+                    <option>School Curriculum & Support (المناهج المدرسية والتقوية)</option>
                   </select>
                 </label>
               </div>

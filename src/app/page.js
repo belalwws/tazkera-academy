@@ -14,38 +14,38 @@ const programs = [
   {
     id: 'quran',
     title: 'Qur’an & Tajweed',
-    arabicTitle: 'القرآن والتجويد',
-    subtitle: 'Recitation · Memorization · Tajweed · Ijazah',
-    text: 'Learn Qur’an recitation, memorization and revision, pronunciation correction, Tajweed rules, correct recitation, and Ijazah pathways.',
+    arabicTitle: 'تحفيظ القرآن الكريم وتجويده',
+    subtitle: 'Memorization · Revision · Tajweed Rules',
+    text: 'Learn Qur’an recitation, memorization, regular revision, Tajweed rules, correct pronunciation, and personalized guidance.',
     image: '/assets/generated/program-quran.webp',
-    tags: ['Recitation', 'Hifz & Revision', 'Ijazah Track'],
+    tags: ['Memorization & Revision', 'Tajweed Rules', 'All Age Groups'],
+  },
+  {
+    id: 'tajweed',
+    title: 'Tajweed Course for Beginners',
+    arabicTitle: 'كورس تجويد للمبتدئين',
+    subtitle: 'Articulation Points · Foundational Rules · Practical Application',
+    text: 'Step-by-step practical and theoretical Tajweed rules for beginners to perfect recitation and pronunciation with ease.',
+    image: '/assets/photos/quran-card.jpg',
+    tags: ['Beginner Friendly', 'Makharij & Sifat', 'Practical Recitation'],
   },
   {
     id: 'arabic',
-    title: 'Arabic Language',
-    arabicTitle: 'اللغة العربية',
-    subtitle: 'Reading · Writing · Conversation · Grammar',
-    text: 'Arabic for non-Arabic speakers from beginner through intermediate and advanced levels, covering reading, writing, conversation, grammar, morphology, listening, and speaking.',
+    title: 'Arabic Language Foundation',
+    arabicTitle: 'تعليم وتأسيس اللغة العربية',
+    subtitle: 'Reading · Writing · Pronunciation · Fluency',
+    text: 'Comprehensive Arabic foundation from alphabet letters to fluent reading, writing, and proper Arabic pronunciation for all levels.',
     image: '/assets/generated/program-arabic.webp',
-    tags: ['Beginner to Advanced', 'Conversation', 'Grammar & Morphology'],
-  },
-  {
-    id: 'qaida',
-    title: 'Noorani Qaida',
-    arabicTitle: 'القاعدة النورانية',
-    subtitle: 'Foundational Arabic Reading for Beginners',
-    text: 'A structured foundation for young learners and beginners to build confidence with Arabic letters, vowels, pronunciation, and reading.',
-    image: '/assets/generated/program-qaida.webp',
-    tags: ['Beginners & Kids', 'Phonetics', 'Step-by-Step'],
+    tags: ['From Scratch', 'Reading & Writing', 'Clear Pronunciation'],
   },
   {
     id: 'islamic',
-    title: 'Islamic Studies',
-    arabicTitle: 'الدراسات الإسلامية',
-    subtitle: 'Aqeedah · Islamic Studies · Beginner & Advanced',
-    text: 'Study Aqeedah and Islamic knowledge through beginner and advanced courses designed around the learner’s level and goals.',
+    title: 'Islamic Studies & Mindset',
+    arabicTitle: 'تدريس العلوم الشرعية وتأسيس وعي الطفل',
+    subtitle: 'Fiqh · Aqeedah · Hadith · Islamic Ethics',
+    text: 'Foundational courses in Fiqh, sound Islamic Creed (Aqeedah), Hadith, and building a conscious Muslim child mindset.',
     image: '/assets/generated/program-islamic.webp',
-    tags: ['Aqeedah', 'Beginner Courses', 'Advanced Courses'],
+    tags: ['Fiqh & Aqeedah', 'Hadith & Seerah', 'Islamic Values & Ethics'],
   },
 ];
 
@@ -96,13 +96,13 @@ const steps = [
   },
   {
     num: '02',
-    title: 'Meet 2 Teachers For Free',
-    desc: 'Attend two free trial lessons with two different teachers to experience their teaching style and complete a level assessment.',
+    title: 'Meet Your Teacher',
+    desc: 'Attend a free trial lesson and level assessment to experience the teaching style and evaluate baseline level.',
   },
   {
     num: '03',
-    title: 'Choose Your Best Match',
-    desc: 'Select the teacher with whom the learner feels most comfortable, motivated, and engaged.',
+    title: 'Get Your Custom Plan',
+    desc: 'Receive a tailored learning roadmap aligned with the student’s pace, strengths, and goals.',
   },
   {
     num: '04',
@@ -113,24 +113,24 @@ const steps = [
 
 const faqs = [
   {
-    q: 'How do the two free trial lessons work?',
-    a: 'You receive two free trial lessons with two different teachers, plus a level assessment. This gives the learner a chance to experience both teaching styles and choose the teacher who feels like the best match.'
+    q: 'How does the free trial lesson work?',
+    a: 'You receive a free trial lesson plus a level assessment. This gives the learner a chance to experience the teaching style, understand the personalized plan, and ask questions before enrolling.'
   },
   {
     q: 'Do you teach both children and adults?',
-    a: 'Yes. Tazkera Academy serves learners of different ages and starting levels, including children, teens, and adults. The learning plan is adapted to each student’s level, goals, pace, strengths, and challenges.'
+    a: 'Yes. Al-Mundhir Quran Academy serves learners of different ages and starting levels, including children (4-6, 7-12), teens (13-17), and adults (18+). The learning plan is adapted to each student’s level and goals.'
   },
   {
     q: 'Can complete beginners with no Arabic knowledge join?',
-    a: 'Yes. Complete beginners can start with Noorani Qaida and foundational Arabic reading, then progress through a learning path suited to their level and goals. The teaching team has experience since 2017 with non-Arabic speakers.'
+    a: 'Yes. Complete beginners can start with foundational Arabic reading, then progress through a learning path suited to their level and goals with patient, qualified tutors.'
   },
   {
     q: 'Can I choose my own schedule and change it later?',
-    a: 'During booking, share your preferred days, times, and city or time zone. The academy will coordinate the available schedule with you directly on WhatsApp.'
+    a: 'During booking, share your preferred days, times, and city or time zone. The academy coordinates the available schedule with you directly on WhatsApp (01551669364).'
   },
   {
     q: 'What is included in the monthly subscription?',
-    a: 'Every plan includes a personalized learning plan, progress tracking and regular feedback, homework and revision support, a supportive learning environment, and a certificate upon course completion.'
+    a: 'Every plan includes a personalized 1-on-1 learning plan, progress tracking and regular feedback, homework and revision support, a supportive learning environment, and continuous coordination with parents.'
   },
 ];
 
@@ -164,7 +164,7 @@ export default function Home() {
 
             <Reveal delay={0.14}>
               <p className="new-hero-lead">
-                Personalized Qur’an, Arabic, and Islamic learning for non-Arabic speakers of different ages and starting levels, guided by an experienced teaching team since 2017.
+                Personalized Qur’an, Tajweed, Arabic language, and Islamic studies with a learner-first approach and dedicated tutor support.
               </p>
             </Reveal>
 
@@ -181,7 +181,7 @@ export default function Home() {
             <Reveal delay={0.26} className="hero-benefits-row">
               <div className="hero-benefit-item">
                 <div className="benefit-icon-box"><CalendarDays size={18}/></div>
-                <div><b>Since 2017</b><span>Teaching experience</span></div>
+                <div><b>Learner First</b><span>Tailored curriculum</span></div>
               </div>
               <div className="hero-benefit-item">
                 <div className="benefit-icon-box"><Users size={18}/></div>
@@ -196,10 +196,10 @@ export default function Home() {
 
           <div className="new-hero-visual">
             <div className="hero-visual-glow" />
-            <div className="hero-brand-seal" aria-label="Tazkera Academy official logo">
+            <div className="hero-brand-seal" aria-label="Al-Mundhir Quran Academy official logo">
               <Image
-                src="/assets/tazkera-official-logo.jpg"
-                alt="Tazkera Academy official logo"
+                src="/assets/logo.png"
+                alt="Al-Mundhir Quran Academy official logo"
                 width={140}
                 height={140}
                 className="hero-brand-logo"
@@ -240,18 +240,18 @@ export default function Home() {
         {/* TRUST COUNTERS BAR */}
         <div className="container hero-trust-panel">
           <div className="trust-panel-item">
-            <strong>Since 2017</strong>
-            <span>Teaching Experience</span>
-          </div>
-          <div className="trust-divider" />
-          <div className="trust-panel-item">
-            <strong>2</strong>
-            <span>Free Trial Lessons</span>
-          </div>
-          <div className="trust-divider" />
-          <div className="trust-panel-item">
             <strong>Learner First</strong>
-            <span>Personalized learning plans</span>
+            <span>Tailored curriculum</span>
+          </div>
+          <div className="trust-divider" />
+          <div className="trust-panel-item">
+            <strong>Free Trial</strong>
+            <span>Level assessment</span>
+          </div>
+          <div className="trust-divider" />
+          <div className="trust-panel-item">
+            <strong>Personalized</strong>
+            <span>1-on-1 dedicated tutoring</span>
           </div>
           <div className="trust-divider" />
           <div className="trust-panel-item">
@@ -313,7 +313,7 @@ export default function Home() {
               </div>
             </div>
             <Link href="/about" className="inline-arrow">
-              <span>Discover the Tazkera approach</span>
+              <span>Discover the Al-Mundhir approach</span>
               <ArrowRight size={18}/>
             </Link>
           </Reveal>
@@ -583,7 +583,7 @@ export default function Home() {
             <span className="section-kicker">Included With Every Plan</span>
             <h2>Comprehensive Support Beyond The Live Lesson.</h2>
             <p>
-              Tazkera Academy provides an end-to-end learning ecosystem so students make steady, tangible progress between classes.
+              Al-Mundhir Quran Academy provides an end-to-end learning ecosystem so students make steady, tangible progress between classes.
             </p>
             <div className="included-visual-badges">
               <div className="badge-visual-item">
@@ -694,7 +694,7 @@ export default function Home() {
               <ArrowRight size={18}/>
             </Link>
             <a
-              href="https://wa.me/201105778132"
+              href="https://wa.me/201551669364"
               target="_blank"
               rel="noreferrer"
               className="button premium-whatsapp-cta"

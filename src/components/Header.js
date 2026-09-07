@@ -32,19 +32,19 @@ export default function Header() {
       <div className="top-announcement-bar">
         <div className="container announcement-inner">
           <span className="announcement-badge"><Sparkles size={13}/> Personalized Qur’an & Arabic Learning</span>
-          <span className="announcement-text">Start with <b>2 free trial lessons</b> with 2 different teachers, then choose the best match.</span>
-          <a href="https://wa.me/201105778132" target="_blank" rel="noreferrer" className="announcement-link">
+          <span className="announcement-text">Al-Mundhir Quran Academy · Start with <b>a free trial lesson & level assessment</b>.</span>
+          <a href="https://wa.me/201551669364" target="_blank" rel="noreferrer" className="announcement-link">
             Chat on WhatsApp <ArrowUpRight size={13}/>
           </a>
         </div>
       </div>
 
       <div className="container header-inner premium-header-inner">
-        <Link href="/" className="brand premium-brand" aria-label="Tazkera Academy Home">
+        <Link href="/" className="brand premium-brand" aria-label="Al-Mundhir Quran Academy Home">
           <div className="brand-emblem-wrap">
             <Image
-              src="/assets/tazkera-official-logo.jpg"
-              alt="Tazkera Academy official logo"
+              src="/assets/logo.png"
+              alt="Al-Mundhir Quran Academy logo"
               width={52}
               height={52}
               className="brand-mark-3d"
@@ -52,8 +52,8 @@ export default function Header() {
             />
           </div>
           <div className="brand-copy">
-            <span className="brand-name">Tazkera Academy</span>
-            <span className="brand-tagline">Light Your Path With The Quran</span>
+            <span className="brand-name">Al-Mundhir Academy</span>
+            <span className="brand-tagline">أكاديمية المنذر للقرآن وعلومه</span>
           </div>
         </Link>
 
@@ -74,7 +74,7 @@ export default function Header() {
 
         <div className="header-actions premium-header-actions">
           <a
-            href="https://wa.me/201105778132"
+            href="https://wa.me/201551669364"
             className="header-whatsapp"
             target="_blank"
             rel="noreferrer"
@@ -83,7 +83,7 @@ export default function Header() {
             <MessageCircle size={17} />
             <span>WhatsApp</span>
           </a>
-          <Link href="/contact#trial" className="header-trial" aria-label="Book 2 Free Trials">
+          <Link href="/contact#trial" className="header-trial" aria-label="Book Free Trial">
             <span>Free Trial</span>
             <ArrowUpRight size={13} />
           </Link>
@@ -121,7 +121,7 @@ export default function Header() {
             </div>
             <div className="mobile-menu-footer">
               <a
-                href="https://wa.me/201105778132"
+                href="https://wa.me/201551669364"
                 className="button premium-whatsapp full"
                 target="_blank"
                 rel="noreferrer"
@@ -133,7 +133,7 @@ export default function Header() {
                 onClick={() => setOpen(false)}
                 className="button premium-primary full"
               >
-                Book 2 Free Trials <ArrowUpRight size={16} />
+                Book Free Trial <ArrowUpRight size={16} />
               </Link>
             </div>
           </motion.div>
