@@ -4,6 +4,7 @@ const siteUrl = 'https://www.tazkera.academy';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  verification: { google: '7806aymMxrLdEqXGT9xyilp2YaraxO-LagfEsiFywT8' },
   title: 'Tazkera Academy | Personalized Quran, Arabic & Islamic Studies',
   description: 'Tazkera Academy offers personalized Qur’an, Tajweed, Arabic language, and Islamic studies for non-Arabic speakers, with teaching experience since 2017 and two free trial lessons with two different teachers.',
   alternates: { canonical: '/' },
