@@ -1,4 +1,18 @@
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'About Tazkera Academy | Quran, Arabic & Islamic Studies',
+  description: 'Learn about Tazkera Academy’s personalized approach to Qur’an, Arabic, and Islamic studies for non-Arabic speakers, and its teaching experience since 2017.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    type: 'website',
+    url: '/about',
+    siteName: 'Tazkera Academy',
+    title: 'About Tazkera Academy | Quran, Arabic & Islamic Studies',
+    description: 'Learn about Tazkera Academy’s personalized approach to Qur’an, Arabic, and Islamic studies for non-Arabic speakers.',
+    images: [{ url: '/assets/tazkera-official-logo.jpg', alt: 'Tazkera Academy official logo' }],
+  },
+};
 import Image from 'next/image';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
