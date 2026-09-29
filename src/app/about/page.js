@@ -55,21 +55,21 @@ export default function AboutPage() {
             <div className="premium-pill">
               <span className="pill-dot" />
               <Sparkles size={14} className="pill-icon" />
-              <span>About Al-Mundhir Quran Academy · أكاديمية المنذر</span>
+              <span>About Tazkera Academy · Teaching Experience Since 2017</span>
             </div>
             <h1 className="hero-title">
               Learning That Builds <br />
               <em className="gold-gradient-text">Knowledge, Confidence & Connection</em>
             </h1>
             <p className="about-hero-lead">
-              Al-Mundhir Quran Academy (أكاديمية المنذر) is a specialized educational academy dedicated to teaching the Holy Qur’an and its sciences. We connect students with the Book of Allah to memorize, understand, and live by it through an engaging online pedagogical methodology for children and adults.
+              Tazkera Academy is a specialized educational academy helping non-Arabic speakers build a meaningful connection with the Qur’an, Arabic language, and Islamic knowledge. Since 2017, our team has guided learners from different countries, ages, and backgrounds around their individual needs and goals.
             </p>
             <div className="about-hero-stats">
-              <div><strong>Learner First</strong><span>Personalized Path</span></div>
+              <div><strong>Since 2017</strong><span>Teaching Experience</span></div>
               <div className="stat-sep"/>
-              <div><strong>1-on-1</strong><span>Dedicated Tutors</span></div>
+              <div><strong>Personal</strong><span>Learner-First Approach</span></div>
               <div className="stat-sep"/>
-              <div><strong>Free Trial</strong><span>Level Assessment</span></div>
+              <div><strong>2</strong><span>Free Trials</span></div>
             </div>
           </Reveal>
 
@@ -110,8 +110,8 @@ export default function AboutPage() {
               <div className="pillar-item">
                 <CheckCircle2 size={20} className="pillar-icon"/>
                 <div>
-                  <b>Dedicated Teaching Team</b>
-                  <p>Qualified teachers with deep educational experience and passion for Quranic education.</p>
+                  <b>Experienced Teaching Team</b>
+                  <p>Teaching experience since 2017, with a focus on the needs of non-Arabic speakers.</p>
                 </div>
               </div>
               <div className="pillar-item">
@@ -126,13 +126,13 @@ export default function AboutPage() {
 
           <Reveal delay={0.1} className="mission-premium-card">
             <div className="mission-badge">Our Mission</div>
-            <h3>Make the Qur’an, Arabic, and Islamic knowledge accessible, impactful, and beloved for all.</h3>
+            <h3>Make the Qur’an, Arabic, and Islamic knowledge accessible to every non-Arabic speaker.</h3>
             <p>
               Regardless of age, background, or starting level, our mission is to turn learning into a meaningful journey that lasts beyond the classroom.
             </p>
             <div className="mission-signature-row">
               <div className="mission-motto">“Light Your Path With The Quran”</div>
-              <div className="mission-arabic-motto">أكاديمية المنذر</div>
+              <div className="mission-arabic-motto">نور طريقك بالقرآن</div>
             </div>
           </Reveal>
         </div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
             <span className="section-kicker">Learning Across Borders</span>
             <h2>Built for non-Arabic speakers from different countries and backgrounds.</h2>
             <p>
-              Al-Mundhir Quran Academy guides learners of all age groups with each learning experience shaped around the student’s level, goals, pace, strengths, and challenges.
+              Tazkera Academy has guided learners from different countries, ages, and backgrounds since 2017, with each learning experience shaped around the student’s level, goals, pace, strengths, and challenges.
             </p>
             <div className="rec-feature-list">
               <div className="rec-feat-item">
@@ -241,7 +241,7 @@ export default function AboutPage() {
               <ArrowRight size={18}/>
             </Link>
             <a
-              href="https://wa.me/201551669364"
+              href="https://wa.me/201105778132"
               target="_blank"
               rel="noreferrer"
               className="button premium-whatsapp-cta"
